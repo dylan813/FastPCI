@@ -1,0 +1,3 @@
+# ninja log v5
+0	10404	1741206381815001289	/home/dylanleo/Documents/FastPCI/models/EMD/build/temp.linux-x86_64-cpython-39/cuda/emd.o	3104e17c497b15ee
+10	8162	1741206469144823883	/home/dylanleo/Documents/FastPCI/models/EMD/build/temp.linux-x86_64-cpython-39/cuda/emd_kernel.o	8a0ebeaafb63dd94

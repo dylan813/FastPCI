@@ -7,6 +7,17 @@ channels:
   - pytorch
   - conda-forge
 dependencies:
+# added dependencies
+  - cudatoolkit-dev=11.3.1
+  - gcc=10
+  - gxx=10
+  - gcc_linux-64=10
+  - gxx_linux-64=10
+  - binutils_linux-64=2.39
+  - binutils_impl_linux-64=2.39
+  - ld_impl_linux-64=2.39
+
+# original dependencies
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_gnu
   - addict=2.4.0=pyhd8ed1ab_2
@@ -86,7 +97,7 @@ dependencies:
   - krb5=1.21.2=h659d440_0
   - lame=3.100=h166bdaf_1003
   - lcms2=2.15=hfd0df8a_0
-  - ld_impl_linux-64=2.40=h55db66e_0
+  # - ld_impl_linux-64=2.40=h55db66e_0
   - lerc=4.0.0=h27087fc_0
   - libblas=3.9.0=1_h86c2bf4_netlib
   - libcblas=3.9.0=5_h92ddd45_netlib

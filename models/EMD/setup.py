@@ -9,6 +9,15 @@ Notes:
 from setuptools import setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
+# Add the THRUST_IGNORE_CUB_VERSION_CHECK flag to the nvcc arguments
+extra_compile_args = {
+    'cxx': ['-g'],
+    'nvcc': [
+        '-O2', 
+        '-D_GLIBCXX_USE_CXX11_ABI=0',
+        '-DTHRUST_IGNORE_CUB_VERSION_CHECK'
+    ]
+}
 
 setup(
     name='emd_ext',
@@ -19,7 +28,7 @@ setup(
                 'cuda/emd.cpp',
                 'cuda/emd_kernel.cu',
             ],
-            extra_compile_args={'cxx': ['-g'], 'nvcc': ['-O2']}
+            extra_compile_args=extra_compile_args
         ),
     ],
     cmdclass={

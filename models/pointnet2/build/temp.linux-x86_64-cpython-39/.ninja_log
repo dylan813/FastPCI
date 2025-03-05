@@ -1,0 +1,10 @@
+# ninja log v5
+2	4529	1741206509494636354	/home/dylanleo/Documents/FastPCI/models/pointnet2/build/temp.linux-x86_64-cpython-39/src/sampling.o	b662798075011042
+1	4556	1741206509523636932	/home/dylanleo/Documents/FastPCI/models/pointnet2/build/temp.linux-x86_64-cpython-39/src/group_points.o	fd0877fa3a172978
+1	4588	1741206509554637550	/home/dylanleo/Documents/FastPCI/models/pointnet2/build/temp.linux-x86_64-cpython-39/src/interpolate.o	8e59cc162b141418
+0	4806	1741206509772641893	/home/dylanleo/Documents/FastPCI/models/pointnet2/build/temp.linux-x86_64-cpython-39/src/ball_query.o	27b0dbc95ad783cf
+1	11193	1741206516156768852	/home/dylanleo/Documents/FastPCI/models/pointnet2/build/temp.linux-x86_64-cpython-39/src/pointnet2_api.o	9878b169d414ce1f
+16	11700	1741206579964015833	/home/dylanleo/Documents/FastPCI/models/pointnet2/build/temp.linux-x86_64-cpython-39/src/group_points_gpu.o	73e231ab4c2481e8
+16	11799	1741206580064017757	/home/dylanleo/Documents/FastPCI/models/pointnet2/build/temp.linux-x86_64-cpython-39/src/interpolate_gpu.o	15185f6fc8bcc6f4
+16	11806	1741206580070017873	/home/dylanleo/Documents/FastPCI/models/pointnet2/build/temp.linux-x86_64-cpython-39/src/ball_query_gpu.o	88898840a5bcc327
+17	12174	1741206580438024953	/home/dylanleo/Documents/FastPCI/models/pointnet2/build/temp.linux-x86_64-cpython-39/src/sampling_gpu.o	9e6f0c8c45dbcdc4
