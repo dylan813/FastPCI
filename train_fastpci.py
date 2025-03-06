@@ -77,11 +77,12 @@ def train(args):
     if args.resume:
         experiments = 'experiments/ko/ckpt_best_61.pth'
         checkpoint = torch.load(experiments)
-        net = checkpoint['net']
-        optimizer = checkpoint['optimizer']
-        scheduler = checkpoint['scheduler']
         start_epoch = checkpoint['epoch']
-        scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=80, gamma=0.5, last_epoch = start_epoch - 1)
+        net.load_state_dict(checkpoint['net'])
+        optimizer.load_state_dict(checkpoint['optimizer'])
+        scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=80, gamma=0.5, last_epoch=start_epoch-1)
+        if 'scheduler' in checkpoint:
+            scheduler.load_state_dict(checkpoint['scheduler'])
     else:
         start_epoch = 0
         scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=80, gamma=0.5, last_epoch = start_epoch - 1)
