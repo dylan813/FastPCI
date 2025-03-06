@@ -7,4 +7,5 @@ python train_fastpci.py  \
 --scene_list data/NL-Drive/train_scene_list.txt \
 --npoints 8192 \
 --save_dir experiments/ko/ \
+--resume True \
 > .log_fastpci_ko_train 2>&1

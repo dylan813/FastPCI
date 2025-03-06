@@ -75,7 +75,7 @@ def train(args):
                            eps=1e-08, weight_decay=args.weight_decay)
     
     if args.resume:
-        experiments = 'experiments/ko/ckpt_best_95.pth'
+        experiments = 'experiments/ko/ckpt_best_61.pth'
         checkpoint = torch.load(experiments)
         net = checkpoint['net']
         optimizer = checkpoint['optimizer']
