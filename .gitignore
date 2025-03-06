@@ -26,3 +26,6 @@ models/*/dist/
 data/NL-Drive/test/
 data/NL-Drive/train/
 data/NL-Drive/val/
+
+experiments/ko/
+.log_fastpci_ko_train

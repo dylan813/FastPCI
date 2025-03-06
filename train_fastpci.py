@@ -7,6 +7,8 @@ from torch.utils.data import DataLoader
 import torch.optim as optim
 import os
 import numpy as np
+import gc
+import torch.cuda
 
 from data.no_norm_datasets import NLDriveDataset
 from models.afmf_pcit_prelu import SceneFlowPWC
@@ -88,6 +90,9 @@ def train(args):
     _, time_inp = get_timestamp(args)
 
     for epoch in range(start_epoch, args.epochs):
+        gc.collect()
+        torch.cuda.empty_cache()
+        
         start_time = time.time()
         net.train()
         count = 0
