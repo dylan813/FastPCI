@@ -9,7 +9,7 @@ Notes:
 from setuptools import setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
-# Add the THRUST_IGNORE_CUB_VERSION_CHECK flag to the nvcc arguments
+# add the THRUST_IGNORE_CUB_VERSION_CHECK flag to the nvcc arguments
 extra_compile_args = {
     'cxx': ['-g'],
     'nvcc': [

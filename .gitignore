@@ -23,6 +23,6 @@ models/EMD/*.so
 models/pointnet2/*.so
 models/*/dist/
 
-data/NLDrive/test
-data/NLDrive/train
-data/NLDrive/val
+data/NL-Drive/test/
+data/NL-Drive/train/
+data/NL-Drive/val/
