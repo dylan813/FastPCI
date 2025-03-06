@@ -22,3 +22,7 @@ wheels/
 models/EMD/*.so
 models/pointnet2/*.so
 models/*/dist/
+
+data/NLDrive/test
+data/NLDrive/train
+data/NLDrive/val
